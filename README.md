@@ -6,11 +6,11 @@
 ## Introduction
 CaVepP53 is a TP53-specific variant effect prediction (VEP) model built on the ESMC protein language model and fine-tuned with perturbation-based functional assay data. It enables accurate and interpretable classification of TP53 missense variants by capturing gene-specific mutational signatures and supporting causal inference. The model significantly outperforms general predictors such as AlphaMissense and PrimateAI-3D, and has been experimentally validated with 22 mutations, including 7 novel functional variants.
 <p align="center">
-<img src="/figures/model framework.tif" alt="The framework" style="width:20cm; height:auto;"/>
+<img src="./figures/model framework.tif" alt="The framework" style="width:20cm; height:auto;"/>
 </p>
 CaVepP53-Agent is an AI-driven interpretation framework that integrates large language models (LLMs) with structured biological data sources (e.g., PubMed, TP53 mutation database, UniProt, structural annotations). It generates detailed variant analysis reports to assist in mechanistic understanding and hypothesis generation. Together, the model and agent provide a scalable, gene-focused solution for variant interpretation and precision medicine research.
 <p align="center">
-<img src="/figures/Agent.tif" alt="Agent" style="width:20cm; height:auto;"/>
+<img src="./figures/Agent.tif" alt="Agent" style="width:20cm; height:auto;"/>
 </p>
 <details open><summary><b>Table of contents</b></summary>
 
@@ -31,8 +31,8 @@ CaVepP53-Agent is an AI-driven interpretation framework that integrates large la
 ### Data <a name="data"></a>
 
 This repository contains the data and model for predicting the pathogenicity of TP53 variants using a our gene-specific protein language model, CaVepP53.
-The datasets used for training and evaluating the model are provided"[datas/train_dataset](datas/train_dataset)".
-We have conducted saturation mutagenesis on the TP53 sequence using the fine-tuned CaVepP53. The results of this analysis are included in this repository"[datas/TP53_mutagenesis_predictions.csv](datas/TP53_mutagenesis_predictions)".
+The datasets used for training and evaluating the model are provided"[.datas/train_dataset](.datas/train_dataset)".
+We have conducted saturation mutagenesis on the TP53 sequence using the fine-tuned CaVepP53. The results of this analysis are included in this repository"[.datas/TP53_mutagenesis_predictions.csv](.datas/TP53_mutagenesis_predictions)".
 
 ### Model Weights and Usage <a name="Usage"></a>
 To utilize the CaVepP53 model for predicting the pathogenicity of TP53 variants, you will first need to obtain the model weights and follow the steps below to run the model.
@@ -62,9 +62,9 @@ If you want to fine-tune the model on your own data, we also provide an example"
 cd Agent
 ```
 modify the `.env` file (src/.env) with your own API keys:
-# DeepSeek models (https://platform.deepseek.com/api_keys)
-ANTHROPIC_API_KEY=<your-deepseek-api-key-here>
-# PubMed Email
+#### DeepSeek models (https://platform.deepseek.com/api_keys)
+DeepSeek_API_KEY=<your-deepseek-api-key-here>
+#### PubMed Email
 ENTREZ_EMAIL=<your-email-here>
 
 If you haven't installed the required packages yet, run the following command to install them:
