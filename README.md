@@ -31,8 +31,8 @@ CaVepP53-Agent is an AI-driven interpretation framework that integrates large la
 ### Data <a name="data"></a>
 
 This repository contains the data and model for predicting the pathogenicity of TP53 variants using a our gene-specific protein language model, CaVepP53.
-The datasets used for training and evaluating the model are provided"[.datas/train_dataset.csv](.datas/train_dataset.csv)".
-We have conducted saturation mutagenesis on the TP53 sequence using the fine-tuned CaVepP53. The results of this analysis are included in this repository"[.datas/TP53_mutagenesis_predictions.csv](.datas/TP53_mutagenesis_predictions.csv)".
+The datasets used for training and evaluating the model are provided"[datas/train_dataset](datas/train_dataset.csv)".
+We have conducted saturation mutagenesis on the TP53 sequence using the fine-tuned CaVepP53. The results of this analysis are included in this repository"[.datas/TP53_mutagenesis_predictions](datas/TP53_mutagenesis_predictions.csv)".
 
 ### Model Weights and Usage <a name="Usage"></a>
 To utilize the CaVepP53 model for predicting the pathogenicity of TP53 variants, you will first need to obtain the model weights and follow the steps below to run the model.
@@ -41,7 +41,7 @@ To utilize the CaVepP53 model for predicting the pathogenicity of TP53 variants,
 git clone https://github.com/HuangLab-Bioinformatics-zju/CaVepP53.git
 
 # Create the CaVepP53 environment
-conda create --name CaVepP53 python=3.8
+conda create --name CaVepP53 python=3.11
 
 # Activate the environment
 conda activate CaVepP53
