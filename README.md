@@ -6,11 +6,11 @@
 ## Introduction
 CaVepP53 is a TP53-specific variant effect prediction (VEP) model built on the ESMC protein language model and fine-tuned with perturbation-based functional assay data. It enables accurate and interpretable classification of TP53 missense variants by capturing gene-specific mutational signatures and supporting causal inference. The model significantly outperforms general predictors such as AlphaMissense and PrimateAI-3D, and has been experimentally validated with 22 mutations, including 7 novel functional variants.
 <p align="center">
-<img src="./figures/model framework.tif" alt="The framework" style="width:20cm; height:auto;"/>
+<img src="./figures/model framework.png" alt="The framework" style="width:20cm; height:auto;"/>
 </p>
 CaVepP53-Agent is an AI-driven interpretation framework that integrates large language models (LLMs) with structured biological data sources (e.g., PubMed, TP53 mutation database, UniProt, structural annotations). It generates detailed variant analysis reports to assist in mechanistic understanding and hypothesis generation. Together, the model and agent provide a scalable, gene-focused solution for variant interpretation and precision medicine research.
 <p align="center">
-<img src="./figures/Agent.tif" alt="Agent" style="width:20cm; height:auto;"/>
+<img src="./figures/Agent.png" alt="Agent" style="width:20cm; height:auto;"/>
 </p>
 <details open><summary><b>Table of contents</b></summary>
 
