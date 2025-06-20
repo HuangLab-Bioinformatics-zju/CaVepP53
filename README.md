@@ -62,11 +62,12 @@ If you want to fine-tune the model on your own data, we also provide an example"
 cd Agent
 ```
 modify the `.env` file (src/.env) with your own API keys:
-#### DeepSeek models (https://platform.deepseek.com/api_keys)
+```bash
+# DeepSeek models (https://platform.deepseek.com/api_keys)
 DeepSeek_API_KEY=<your-deepseek-api-key-here>
-#### PubMed Email
+# PubMed Email
 ENTREZ_EMAIL=<your-email-here>
-
+```
 If you haven't installed the required packages yet, run the following command to install them:
 <pre>
 # Install the pip packages
